@@ -15,7 +15,7 @@ const AddCandidatePage = () => {
     noticePeriod: "",
     skills: "",
     linkedInProfile: "",
-    status: "",
+    //status: "",
     notes: "",
   });
   const [resumeFile, setResumeFile] = useState<File | null>(null);
@@ -39,7 +39,7 @@ const AddCandidatePage = () => {
       noticePeriod: "",
       skills: "",
       linkedInProfile: "",
-      status: "",
+      //status: "",
       notes: "",
     });
     setResumeFile(null);
@@ -177,14 +177,7 @@ const AddCandidatePage = () => {
               onChange={handleInputChange}
               disabled={loading}
             />
-            <InputField
-              label="Status"
-              icon={<Info className="w-4 h-4 mr-2 text-blue-600" />}
-              name="status"
-              value={formData.status}
-              onChange={handleInputChange}
-              disabled={loading}
-            />
+            
             <TextAreaField
               label="Notes"
               icon={<Info className="w-4 h-4 mr-2 text-blue-600" />}
